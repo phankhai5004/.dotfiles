@@ -68,8 +68,14 @@ return {
   },
 
   {
+    "folke/todo-comments.nvim",
+    event = "BufEnter",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  {
     "numToStr/Comment.nvim",
-    dependencies = "JoosepAlviste/nvim-ts-context-commentstring",
+    dependencies = { "JoosepAlviste/nvim-ts-context-commentstring" },
     config = function()
       require("Comment").setup {
         pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
@@ -80,12 +86,6 @@ return {
   {
     "folke/trouble.nvim",
     cmd = { "Trouble", "TodoTrouble" },
-    dependencies = {
-      {
-        "folke/todo-comments.nvim",
-        opts = {},
-      },
-    },
     config = function()
       require("trouble").setup()
     end,
