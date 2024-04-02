@@ -162,7 +162,13 @@ return {
     end,
   },
 
-  { "NvChad/nvcommunity", { import = "nvcommunity.folds.ufo" } },
+  {
+    "NvChad/nvcommunity",
+    { import = "nvcommunity.folds.ufo" },
+    { import = "nvcommunity.git.lazygit" },
+    { import = "nvcommunity.editor.treesj" },
+    { import = "nvcommunity.tools.telescope-fzf-native" },
+  },
 
   {
     "kylechui/nvim-surround",
