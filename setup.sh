@@ -90,6 +90,8 @@ function setupTerminal() {
   echo "Close the terminal and run these scripts"
   echo "sdk install java 17.0.12-oracle"
   echo "nvm install --lts"
+
+  echo "dont forget to check the others folder"
 }
 
 # Call the functions
