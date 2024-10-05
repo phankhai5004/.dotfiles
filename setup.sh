@@ -57,13 +57,18 @@ function installPackagesWithBrew() {
 function installSdkmanAndJava() {
   prettyPrint "Installing SDKMAN and Java 17.0.12-oracle"
 
-  # Install SDKMAN
-  curl -s "https://get.sdkman.io" | bash
+  # Check if SDKMAN is already installed
+  if command -v sdk >/dev/null 2>&1; then
+    echo "SDKMAN is already installed"
+  else
+    # Install SDKMAN
+    curl -s "https://get.sdkman.io" | bash
 
-  # Add SDKMAN to PATH and initialize
-  # echo 'export SDKMAN_DIR="$HOME/.sdkman"' >>~/.bashrc
-  # echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >>~/.bashrc
-  # source "$HOME/.sdkman/bin/sdkman-init.sh"
+    # Add SDKMAN to PATH and initialize
+    # echo 'export SDKMAN_DIR="$HOME/.sdkman"' >>~/.bashrc
+    # echo '[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"' >>~/.bashrc
+    # source "$HOME/.sdkman/bin/sdkman-init.sh"
+  fi
 
   # Install Java 17.0.12-oracle
   sdk install java 17.0.12-oracle
