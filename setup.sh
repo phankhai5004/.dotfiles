@@ -40,6 +40,8 @@ function installPackagesWithBrew() {
   # Create tmux plugin directory if it doesn't exist
   if [ ! -d "$HOME/nvm" ]; then
     mkdir ~/.nvm
+
+    nvm install --lts
   else
     printf "nvm is already installed"
   fi
