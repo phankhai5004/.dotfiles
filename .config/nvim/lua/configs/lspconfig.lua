@@ -14,6 +14,8 @@ local servers = {
   "lua_ls",
   "jsonls",
   "bashls",
+  "docker_compose_language_service",
+  "dockerls",
 }
 
 -- local handlers = {
