@@ -24,8 +24,6 @@ function installHomebrew() {
     # Install Homebrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # Add Homebrew to PATH if installation was successful
-    printf 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
     printf "Homebrew installation complete"
