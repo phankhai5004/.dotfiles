@@ -47,7 +47,7 @@ function installPackagesWithBrew() {
   prettyPrint "Packages installation complete"
 }
 
-function installSdkmanAndJava() {
+function installSdkman() {
   prettyPrint "Installing SDKMAN and Java 17.0.12-oracle"
 
   # Check if SDKMAN is already installed
@@ -59,12 +59,6 @@ function installSdkmanAndJava() {
   fi
 
   prettyPrint "SDKMAN and Java installation complete"
-}
-
-function synchronize() {
-  prettyPrint "Synchronizing with Stow"
-  stow --adopt .
-  prettyPrint "Synchronizing completed"
 }
 
 function installTpm() {
@@ -80,10 +74,16 @@ function installTpm() {
   prettyPrint "TPM installation complete"
 }
 
+function synchronize() {
+  prettyPrint "Synchronizing with Stow"
+  stow --adopt .
+  prettyPrint "Synchronizing completed"
+}
+
 function setupTerminal() {
   prettyPrint "Setting up terminal"
 
-  dconf load /org/gnome/terminal <gnome-terminal-settings.txt
+  dconf load /org/gnome/terminal/ <gnome-terminal-settings.txt
 
   prettyPrint "Setting up terminal completed"
 
@@ -96,7 +96,7 @@ function setupTerminal() {
 installBasicTools
 installHomebrew
 installPackagesWithBrew
-installSdkmanAndJava
+installSdkman
 installTpm
 
 synchronize
