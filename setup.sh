@@ -44,8 +44,6 @@ function installPackagesWithBrew() {
     printf "nvm is already installed"
   fi
 
-  nvm install --lts
-
   prettyPrint "Packages installation complete"
 }
 
@@ -59,9 +57,6 @@ function installSdkmanAndJava() {
     # Install SDKMAN
     curl -s "https://get.sdkman.io" | bash
   fi
-
-  # Install Java 17.0.12-oracle
-  sdk install java 17.0.12-oracle
 
   prettyPrint "SDKMAN and Java installation complete"
 }
@@ -91,6 +86,10 @@ function setupTerminal() {
   dconf load /org/gnome/terminal <gnome-terminal-settings.txt
 
   prettyPrint "Setting up terminal completed"
+
+  echo "Close the terminal and run these scripts"
+  echo "sdk install java 17.0.12-oracle"
+  echo "nvm install --lts"
 }
 
 # Call the functions
