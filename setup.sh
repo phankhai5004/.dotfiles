@@ -98,4 +98,6 @@ installHomebrew
 installPackagesWithBrew
 installSdkmanAndJava
 installTpm
+
 synchronize
+setupTerminal
