@@ -1,0 +1,22 @@
+[legacy/profiles:]
+list=['76f69d3e-3f9a-434b-9b01-583fe18fa189']
+
+[legacy/profiles:/:76f69d3e-3f9a-434b-9b01-583fe18fa189]
+audible-bell=false
+background-color='rgb(30,34,42)'
+bold-color='#ABB2BF'
+bold-color-same-as-fg=true
+font='JetBrainsMono Nerd Font 13'
+foreground-color='#abb2bf'
+palette=['#000000', '#e06c75', '#98c379', '#d19a66', '#61afef', '#c678dd', '#56b6c2', '#abb2bf', '#5c6370', '#e06c75', '#98c379', '#d19a66', '#61afef', '#c678dd', '#56b6c2', '#ffffff']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+visible-name='One Dark'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
