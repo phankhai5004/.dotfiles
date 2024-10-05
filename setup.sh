@@ -9,7 +9,7 @@ function installBasicTools() {
   prettyPrint "Installing basic tools"
 
   sudo apt-get update
-  sudo apt-get install -y git curl build-essential xclip python3.10-venv stow tmux
+  sudo apt-get install -y git curl build-essential xclip python3.10-venv stow tmux preload
 
   prettyPrint "Basic tools installation complted"
 }
