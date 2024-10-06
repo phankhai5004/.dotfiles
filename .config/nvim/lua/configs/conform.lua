@@ -9,6 +9,7 @@ local options = {
     typescript = { "prettierd" },
     typescriptreact = { "prettierd" },
     bash = { "shfmt" },
+    markdown = { "prettierd" },
   },
 
   format_on_save = {

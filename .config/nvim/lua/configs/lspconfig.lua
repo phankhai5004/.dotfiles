@@ -16,6 +16,7 @@ local servers = {
   "bashls",
   "docker_compose_language_service",
   "dockerls",
+  "marksman",
 }
 
 -- local handlers = {
