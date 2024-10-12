@@ -1,6 +1,13 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
+-- load java
+local ok, java = pcall(require, "java")
+
+if ok then
+  java.setup {}
+end
+
 local lspconfig = require "lspconfig"
 -- EXAMPLE
 local servers = {
@@ -17,6 +24,7 @@ local servers = {
   "docker_compose_language_service",
   "dockerls",
   "marksman",
+  "jdtls",
 }
 
 -- local handlers = {

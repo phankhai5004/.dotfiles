@@ -3,9 +3,6 @@ local overrides = require "configs.overrides"
 return {
   {
     "neovim/nvim-lspconfig",
-    dependencies = {
-      { "pmizio/typescript-tools.nvim", enable = false },
-    },
     config = function()
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
@@ -30,12 +27,6 @@ return {
           require "nvchad.configs.luasnip"
         end,
       },
-
-      {
-        "supermaven-inc/supermaven-nvim",
-        enabled = false,
-        opts = {},
-      },
     },
   },
 
@@ -53,16 +44,20 @@ return {
 
   {
     "numToStr/Comment.nvim",
-    dependencies = { "JoosepAlviste/nvim-ts-context-commentstring" },
+    dependencies = {
+      { "JoosepAlviste/nvim-ts-context-commentstring" },
+      {
+        "folke/todo-comments.nvim",
+        event = "BufReadPost",
+        cmd = { "TodoLocList", "TodoQuickFix", "TodoTelescope" },
+        opts = {},
+      },
+    },
   },
 
   {
-    "NvChad/nvcommunity",
-    { import = "nvcommunity.folds.ufo" },
-    { import = "nvcommunity.git.lazygit" },
-    { import = "nvcommunity.editor.treesj" },
-    { import = "nvcommunity.tools.telescope-fzf-native" },
-    { import = "nvcommunity.editor.telescope-undo" },
+    "williamboman/mason.nvim",
+    opts = overrides.mason,
   },
 
   {

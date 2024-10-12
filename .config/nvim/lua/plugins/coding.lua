@@ -36,6 +36,7 @@ return {
       },
     },
   },
+
   { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
 
   {
@@ -51,5 +52,15 @@ return {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
     ft = { "markdown" },
+  },
+
+  {
+    "nvim-java/nvim-java",
+  },
+
+  {
+    "folke/trouble.nvim",
+    opts = {},
+    cmd = "Trouble",
   },
 }
