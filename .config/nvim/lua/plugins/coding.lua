@@ -55,10 +55,6 @@ return {
   },
 
   {
-    "nvim-java/nvim-java",
-  },
-
-  {
     "folke/trouble.nvim",
     opts = {},
     cmd = "Trouble",

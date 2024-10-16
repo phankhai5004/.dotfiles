@@ -4,7 +4,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
   },
@@ -53,11 +52,6 @@ return {
         opts = {},
       },
     },
-  },
-
-  {
-    "williamboman/mason.nvim",
-    opts = overrides.mason,
   },
 
   {

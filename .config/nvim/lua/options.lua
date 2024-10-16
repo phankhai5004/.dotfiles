@@ -4,6 +4,7 @@ require "nvchad.options"
 
 vim.opt.autoread = true
 vim.opt.swapfile = false
+vim.opt.autowrite = true
 vim.opt.pumheight = 7
 vim.opt.wrap = true
 vim.opt.fillchars = {
