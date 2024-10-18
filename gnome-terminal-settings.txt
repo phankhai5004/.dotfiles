@@ -6,6 +6,7 @@ audible-bell=false
 background-color='rgb(30,34,42)'
 bold-color='#ABB2BF'
 bold-color-same-as-fg=true
+cursor-blink-mode='off'
 font='JetBrainsMono Nerd Font 13'
 foreground-color='#abb2bf'
 palette=['#000000', '#e06c75', '#98c379', '#d19a66', '#61afef', '#c678dd', '#56b6c2', '#abb2bf', '#5c6370', '#e06c75', '#98c379', '#d19a66', '#61afef', '#c678dd', '#56b6c2', '#ffffff']
@@ -17,6 +18,8 @@ visible-name='One Dark'
 
 [legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 audible-bell=false
+background-color='rgb(23,20,33)'
+foreground-color='rgb(208,207,204)'
 scrollbar-policy='never'
 use-system-font=false
 use-theme-colors=false
