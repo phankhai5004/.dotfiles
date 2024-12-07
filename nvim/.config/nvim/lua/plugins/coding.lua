@@ -59,4 +59,16 @@ return {
     opts = {},
     cmd = "Trouble",
   },
+
+  {
+    "nvim-java/nvim-java",
+    ft = "java",
+  },
+
+  {
+    "folke/ts-comments.nvim",
+    opts = {},
+    event = "VeryLazy",
+    enabled = vim.fn.has "nvim-0.10.0" == 1,
+  },
 }

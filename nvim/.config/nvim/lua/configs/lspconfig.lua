@@ -1,4 +1,5 @@
 -- load defaults i.e lua_lsp
+require("java").setup {}
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
@@ -17,6 +18,7 @@ local servers = {
   "docker_compose_language_service",
   "dockerls",
   "marksman",
+  "pyright",
 }
 
 -- local handlers = {

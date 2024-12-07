@@ -58,4 +58,14 @@ return {
     "nvim-telescope/telescope.nvim",
     opts = overrides.telescope,
   },
+
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      registries = {
+        "github:nvim-java/mason-registry",
+        "github:mason-org/mason-registry",
+      },
+    },
+  },
 }
