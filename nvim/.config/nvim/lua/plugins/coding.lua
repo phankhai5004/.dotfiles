@@ -61,11 +61,6 @@ return {
   },
 
   {
-    "nvim-java/nvim-java",
-    ft = "java",
-  },
-
-  {
     "folke/ts-comments.nvim",
     opts = {},
     event = "VeryLazy",
