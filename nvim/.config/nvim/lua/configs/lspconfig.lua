@@ -1,5 +1,4 @@
 -- load defaults i.e lua_lsp
-require("java").setup {}
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"

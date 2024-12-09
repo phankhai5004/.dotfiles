@@ -93,4 +93,6 @@ M.colorify = {
   highlight = { hex = true, lspvars = true },
 }
 
+require "usercmds"
+
 return M
