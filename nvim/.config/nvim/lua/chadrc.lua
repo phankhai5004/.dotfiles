@@ -9,9 +9,9 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    IlluminatedWordText = { link = "Visual" },
-    IlluminatedWordRead = { link = "Visual" },
-    IlluminatedWordWrite = { link = "Visual" },
+    -- IlluminatedWordText = { link = "Visual" },
+    -- IlluminatedWordRead = { link = "Visual" },
+    -- IlluminatedWordWrite = { link = "Visual" },
 
     FoldColumn = { bg = "black", fg = "white" },
 
@@ -72,6 +72,7 @@ M.nvdash = {
 M.term = {
   hl = "Normal:term,WinSeparator:WinSeparator",
   sizes = { sp = 0.3, vsp = 0.2 },
+  winopts = { winfixbuf = true },
   float = {
     relative = "editor",
     row = 0.05,
