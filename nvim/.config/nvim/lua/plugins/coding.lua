@@ -21,20 +21,9 @@ return {
   },
 
   {
-    "lambdalisue/vim-suda",
-    cmd = { "SudaRead", "SudaWrite" },
-  },
-
-  {
-    "folke/lazydev.nvim",
-    ft = "lua", -- only load on lua files
-    opts = {
-      library = {
-        -- See the configuration section for more details
-        -- Load luvit types when the `vim.uv` word is found
-        { path = "luvit-meta/library", words = { "vim%.uv" } },
-      },
-    },
+    "OXY2DEV/markview.nvim",
+    -- lazy = false, -- Recommended
+    ft = "markdown", -- If you decide to lazy-load anyway
   },
 
   { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
@@ -42,16 +31,6 @@ return {
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
-  },
-
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = "cd app && yarn install",
-    init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
-    end,
-    ft = { "markdown" },
   },
 
   {
