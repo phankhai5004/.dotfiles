@@ -1,8 +1,6 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-require("java").setup {}
-
 local lspconfig = require "lspconfig"
 -- EXAMPLE
 local servers = {
@@ -20,7 +18,6 @@ local servers = {
   "dockerls",
   "marksman",
   "pyright",
-  "jdtls",
 }
 
 local nvlsp = require "nvchad.configs.lspconfig"
