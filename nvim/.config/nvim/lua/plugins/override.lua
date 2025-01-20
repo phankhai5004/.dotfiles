@@ -12,6 +12,7 @@ return {
     "hrsh7th/nvim-cmp",
     opts = overrides.cmp,
     dependencies = {
+      "hrsh7th/cmp-nvim-lsp-signature-help",
       {
         -- snippet plugin
         "L3MON4D3/LuaSnip",

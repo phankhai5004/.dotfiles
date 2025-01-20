@@ -1,12 +1,12 @@
 return {
   {
     "f-person/git-blame.nvim",
-    cmd = "GitBlameToggle",
+    cmd = "GitBlameOpen",
   },
 
   {
     "sindrets/diffview.nvim",
-    cmd = { "DiffviewOpen", "DiffviewToggleFiles" },
+    cmd = { "DiffviewOpen" },
     config = function()
       require("diffview").setup()
     end,

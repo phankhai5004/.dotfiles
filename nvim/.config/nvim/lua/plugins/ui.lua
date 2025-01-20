@@ -1,7 +1,7 @@
 return {
   {
     "RRethy/vim-illuminate",
-    event = { "CursorHold", "CursorHoldI" },
+    lazy = false,
     config = function()
       require "configs.illuminate"
     end,

@@ -21,14 +21,6 @@ return {
   },
 
   {
-    "OXY2DEV/markview.nvim",
-    -- lazy = false, -- Recommended
-    ft = "markdown", -- If you decide to lazy-load anyway
-  },
-
-  { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
-
-  {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },

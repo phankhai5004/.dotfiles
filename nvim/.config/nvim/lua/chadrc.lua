@@ -9,37 +9,29 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    -- IlluminatedWordText = { link = "Visual" },
-    -- IlluminatedWordRead = { link = "Visual" },
-    -- IlluminatedWordWrite = { link = "Visual" },
-
     FoldColumn = { bg = "black", fg = "white" },
 
-    TodoBgTodo = { bg = "blue", fg = "black", bold = true },
-    TodoFgTodo = { fg = "blue", bold = true },
-    TodoBgNOTE = { bg = "vibrant_green", fg = "black", bold = true },
-    TodoFgNOTE = { fg = "vibrant_green", bold = true },
-    TodoBgFIX = { bg = "red", fg = "black", bold = true },
-    TodoFgFIX = { fg = "red", bold = true },
-    TodoBgWARN = { bg = "yellow", fg = "black", bold = true },
-    TodoFgWARN = { fg = "yellow", bold = true },
+    IlluminatedWordText = { link = "Visual" },
+    IlluminatedWordRead = { link = "Visual" },
+    IlluminatedWordWrite = { link = "Visual" },
   },
 
-  hl_override = {
-    NormalFloat = { bg = "black" },
-    -- CmpDocBorder = { bg = "black", fg = "grey_fg" },
-    -- CmpDoc = { bg = "black" },
-    Comment = { italic = true },
-    ["@comment"] = { italic = true, bold = true },
+  hl_override = {},
+
+  integrations = {
+    "todo",
+    "trouble",
+    "diffview",
   },
+
+  transparency = false,
 }
 
 M.ui = {
   cmp = {
     icons_left = false, -- only for non-atom styles!
-    icons = true,
-    lspkind_text = false,
     style = "atom_colored", -- default/flat_light/flat_dark/atom/atom_colored
+    abbr_maxwidth = 60,
     format_colors = {
       tailwind = true, -- will work for css lsp too
       icon = "󱓻",
@@ -84,7 +76,7 @@ M.term = {
 }
 
 M.lsp = {
-  signature = false,
+  signature = true,
 }
 
 M.colorify = {

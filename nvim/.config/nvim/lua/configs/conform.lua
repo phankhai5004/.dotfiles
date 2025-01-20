@@ -10,6 +10,8 @@ local options = {
     typescriptreact = { "prettierd" },
     bash = { "shfmt" },
     markdown = { "prettierd" },
+    python = { "black" },
+    cmake = { "cmakelint" },
   },
 
   format_on_save = {
