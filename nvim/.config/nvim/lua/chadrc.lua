@@ -10,19 +10,11 @@ M.base46 = {
 
   hl_add = {
     FoldColumn = { bg = "black", fg = "white" },
-
-    IlluminatedWordText = { link = "Visual" },
-    IlluminatedWordRead = { link = "Visual" },
-    IlluminatedWordWrite = { link = "Visual" },
   },
 
   hl_override = {},
 
-  integrations = {
-    "todo",
-    "trouble",
-    "diffview",
-  },
+  integrations = { "todo", "trouble", "diffview" },
 
   transparency = false,
 }

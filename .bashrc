@@ -125,5 +125,4 @@ eval "$(zoxide init bash)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export ANTLR_JAR="~/Desktop/PPL/antlr-4.9.2-complete.jar"
-export PATH="~/Desktop/PPL/myenv/bin:$PATH"
+export ANTLR_JAR="~/Desktop/src/antlr-4.9.2-complete.jar"
