@@ -11,7 +11,7 @@ illuminate.configure {
     "treesitter",
     "regex",
   },
-  delay = 100,
+  delay = 200,
   filetypes_denylist = {
     "dirvish",
     "fugitive",
@@ -31,4 +31,8 @@ illuminate.configure {
   },
   under_cursor = true,
   max_file_lines = nil,
+  large_file_cutoff = 2000,
+  large_file_overrides = {
+    providers = { "lsp" },
+  },
 }

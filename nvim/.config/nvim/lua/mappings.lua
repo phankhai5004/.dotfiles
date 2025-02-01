@@ -76,6 +76,16 @@ map("n", "<leader>tQ", "<cmd>Trouble qflist toggle<cr>", {
   desc = "Quickfix List (Trouble)",
 })
 
+map("n", "<A-H>", require("smart-splits").resize_left)
+map("n", "<A-J>", require("smart-splits").resize_down)
+map("n", "<A-K>", require("smart-splits").resize_up)
+map("n", "<A-L>", require("smart-splits").resize_right)
+
+map("n", "<leader><leader>h", require("smart-splits").swap_buf_left)
+map("n", "<leader><leader>j", require("smart-splits").swap_buf_down)
+map("n", "<leader><leader>k", require("smart-splits").swap_buf_up)
+map("n", "<leader><leader>l", require("smart-splits").swap_buf_right)
+
 -- map("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "telescope find files" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

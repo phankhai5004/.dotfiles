@@ -1,7 +1,6 @@
 require "nvchad.options"
 
 -- add yours here!
-
 vim.opt.autoread = true
 vim.opt.swapfile = false
 vim.opt.autowrite = true
