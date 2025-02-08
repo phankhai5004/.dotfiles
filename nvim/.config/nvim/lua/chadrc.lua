@@ -9,12 +9,38 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    FoldColumn = { bg = "black", fg = "white" },
+    FoldColumn = {
+      bg = "black",
+      fg = "white",
+    },
+
+    RenderMarkdownH1Bg = {
+      fg = "blue",
+    },
+    RenderMarkdownH2Bg = {
+      fg = "orange",
+    },
+    RenderMarkdownH3Bg = {
+      fg = "green",
+    },
+    RenderMarkdownH4Bg = {
+      fg = "vibrant_green",
+    },
+    RenderMarkdownH5Bg = {
+      fg = "purple",
+    },
+    RenderMarkdownH6Bg = {
+      fg = "cyan",
+    },
   },
 
   hl_override = {},
 
-  integrations = { "todo", "trouble", "diffview" },
+  integrations = {
+    "todo",
+    "trouble",
+    "diffview",
+  },
 
   transparency = false,
 }
@@ -42,7 +68,19 @@ M.ui = {
     theme = "default", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    order = { "mode", "relativepath", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    order = {
+      "mode",
+      "relativepath",
+      "file",
+      "git",
+      "%=",
+      "lsp_msg",
+      "%=",
+      "diagnostics",
+      "lsp",
+      "cwd",
+      "cursor",
+    },
     separator_style = "block",
     modules = {
       relativepath = function()

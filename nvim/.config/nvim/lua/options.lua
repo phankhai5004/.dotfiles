@@ -15,6 +15,8 @@ vim.opt.fillchars = {
   eob = " ",
 }
 
+-- vim.opt.conceallevel = 1
+
 if vim.fn.has "win32" == 1 then
   vim.o.shell = vim.fn.executable "pwsh" and "pwsh" or "powershell"
   vim.o.shellcmdflag =

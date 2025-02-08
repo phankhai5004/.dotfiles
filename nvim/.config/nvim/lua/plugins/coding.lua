@@ -12,15 +12,6 @@ return {
   },
 
   {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-      require("nvim-surround").setup {}
-    end,
-  },
-
-  {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
@@ -53,6 +44,28 @@ return {
         -- Load luvit types when the `vim.uv` word is found
         { path = "${3rd}/luv/library", words = { "vim%.uv" } },
         { path = "snacks.nvim", words = { "Snacks" } },
+      },
+    },
+  },
+
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*", -- recommended, use latest release instead of latest commit
+    lazy = true,
+    ft = "markdown",
+    dependencies = {
+      -- Required.
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      ui = {
+        enable = false,
+      },
+      workspaces = {
+        {
+          name = "study",
+          path = "~/Desktop/obsidian/study",
+        },
       },
     },
   },
