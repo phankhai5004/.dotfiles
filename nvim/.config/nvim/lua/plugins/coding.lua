@@ -43,11 +43,4 @@ return {
     },
     opts = require "configs.obsidian",
   },
-
-  {
-    "p00f/clangd_extensions.nvim",
-    lazy = true,
-    config = function() end,
-    opts = require "configs.clangd-extensions",
-  },
 }
