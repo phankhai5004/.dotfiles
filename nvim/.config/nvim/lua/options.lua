@@ -19,7 +19,6 @@ opt.fillchars = {
 }
 opt.foldlevel = 99
 opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
-
 opt.foldexpr = "v:lua.require'util.ui'.foldexpr()"
 opt.foldmethod = "expr"
 opt.foldtext = ""

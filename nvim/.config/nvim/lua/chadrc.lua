@@ -10,7 +10,7 @@ M.base46 = {
 
   hl_add = {
     SnacksIndent = { fg = "grey" },
-    WhichKeyTitle = { fg = "white", bg = "black", bold = true },
+    WhichKeyTitle = { fg = "blue", bg = "black", bold = true },
     St_relativepath = { fg = "light_grey", bg = "lightbg", bold = true },
   },
 
@@ -41,7 +41,7 @@ M.ui = {
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     order = { "mode", "relativepath", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
-    separator_style = "block",
+    separator_style = "default",
     modules = {
       relativepath = function()
         local path = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(vim.g.statusline_winid or 0))
@@ -70,7 +70,7 @@ M.nvdash = {
 
 M.term = {
   hl = "Normal:term,WinSeparator:WinSeparator",
-  sizes = { sp = 0.3, vsp = 0.2 },
+  sizes = { sp = 0.4, vsp = 0.3 },
   winopts = { winfixbuf = true },
   float = { relative = "editor", row = 0.05, col = 0.05, width = 0.9, height = 0.8, border = "rounded" },
 }
