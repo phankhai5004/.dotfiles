@@ -9,21 +9,19 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    SnacksIndent = { fg = "#42464e" },
+    SnacksIndent = { fg = "grey" },
+    WhichKeyTitle = { fg = "white", bg = "black", bold = true },
+    St_relativepath = { fg = "light_grey", bg = "lightbg", bold = true },
   },
 
-  hl_override = {},
+  hl_override = {
+    St_file = { bold = true, italic = true },
+  },
 
   integrations = { "todo", "trouble", "diffview" },
 
   transparency = false,
 }
-
-vim.cmd "highlight St_relativepath guifg=#626a83 guibg=#2a2b36"
-
-local stbufnr = function()
-  return vim.api.nvim_win_get_buf(vim.g.statusline_winid or 0)
-end
 
 M.ui = {
   cmp = {
@@ -46,7 +44,7 @@ M.ui = {
     separator_style = "block",
     modules = {
       relativepath = function()
-        local path = vim.api.nvim_buf_get_name(stbufnr())
+        local path = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(vim.g.statusline_winid or 0))
 
         if path == "" then
           return ""

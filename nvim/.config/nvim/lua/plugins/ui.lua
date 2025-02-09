@@ -1,7 +1,7 @@
 return {
   {
     "folke/trouble.nvim",
-    opts = {},
+    opts = require "configs.trouble",
     cmd = "Trouble",
   },
 
@@ -28,5 +28,4 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
     opts = require "configs.render-markdown",
   },
-
 }

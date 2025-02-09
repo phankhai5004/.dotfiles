@@ -1,7 +1,5 @@
 local opts = {
-  ui = {
-    enable = false,
-  },
+  ui = { enable = false, },
   workspaces = {
     {
       name = "study",
