@@ -9,38 +9,18 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    FoldColumn = {
-      bg = "black",
-      fg = "white",
-    },
 
-    RenderMarkdownH1Bg = {
-      fg = "blue",
-    },
-    RenderMarkdownH2Bg = {
-      fg = "orange",
-    },
-    RenderMarkdownH3Bg = {
-      fg = "green",
-    },
-    RenderMarkdownH4Bg = {
-      fg = "vibrant_green",
-    },
-    RenderMarkdownH5Bg = {
-      fg = "purple",
-    },
-    RenderMarkdownH6Bg = {
-      fg = "cyan",
-    },
+    RenderMarkdownH1Bg = { fg = "blue" },
+    RenderMarkdownH2Bg = { fg = "orange" },
+    RenderMarkdownH3Bg = { fg = "green" },
+    RenderMarkdownH4Bg = { fg = "vibrant_green" },
+    RenderMarkdownH5Bg = { fg = "purple" },
+    RenderMarkdownH6Bg = { fg = "cyan" },
   },
 
   hl_override = {},
 
-  integrations = {
-    "todo",
-    "trouble",
-    "diffview",
-  },
+  integrations = { "todo", "trouble", "diffview" },
 
   transparency = false,
 }

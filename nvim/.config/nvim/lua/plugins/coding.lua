@@ -26,47 +26,28 @@ return {
     "folke/snacks.nvim",
     priority = 1000,
     lazy = false,
-    ---@type snacks.Config
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-      bigfile = { enabled = true },
-    },
+    opts = require "configs.snacks",
   },
 
   {
     "folke/lazydev.nvim",
     ft = "lua", -- only load on lua files
-    opts = {
-      library = {
-        -- See the configuration section for more details
-        -- Load luvit types when the `vim.uv` word is found
-        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-        { path = "snacks.nvim", words = { "Snacks" } },
-      },
-    },
+    opts = require "configs.lazydev",
   },
 
   {
     "epwalsh/obsidian.nvim",
-    version = "*", -- recommended, use latest release instead of latest commit
-    lazy = true,
     ft = "markdown",
     dependencies = {
-      -- Required.
       "nvim-lua/plenary.nvim",
     },
-    opts = {
-      ui = {
-        enable = false,
-      },
-      workspaces = {
-        {
-          name = "study",
-          path = "~/Desktop/obsidian/study",
-        },
-      },
-    },
+    opts = require "configs.obsidian",
+  },
+
+  {
+    "p00f/clangd_extensions.nvim",
+    lazy = true,
+    config = function() end,
+    opts = require "configs.clangd-extensions",
   },
 }

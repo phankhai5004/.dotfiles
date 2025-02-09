@@ -1,4 +1,4 @@
-return {
+local opts = {
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },
 
@@ -45,3 +45,5 @@ return {
     },
   },
 }
+
+return opts

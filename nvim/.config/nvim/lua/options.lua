@@ -1,19 +1,30 @@
 require "nvchad.options"
 
+local opt = vim.opt
+
 -- add yours here!
-vim.opt.autoread = true
-vim.opt.swapfile = false
-vim.opt.autowrite = true
-vim.opt.pumheight = 13
-vim.opt.wrap = true
-vim.opt.fillchars = {
-  fold = " ",
+opt.autoread = true
+opt.swapfile = false
+opt.autowrite = true
+opt.pumheight = 13
+opt.wrap = true
+
+opt.fillchars = {
   foldopen = "",
-  foldsep = " ",
   foldclose = "",
-  stl = " ",
+  fold = " ",
+  foldsep = " ",
+  diff = "╱",
   eob = " ",
 }
+opt.foldlevel = 99
+opt.foldenable = true
+opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
+
+opt.smoothscroll = true
+opt.foldexpr = "v:lua.require'util.ui'.foldexpr()"
+opt.foldmethod = "expr"
+opt.foldtext = ""
 
 -- vim.opt.conceallevel = 1
 

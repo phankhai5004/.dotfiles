@@ -126,3 +126,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export ANTLR_JAR="~/Desktop/src/antlr-4.9.2-complete.jar"
+. "$HOME/.cargo/env"
