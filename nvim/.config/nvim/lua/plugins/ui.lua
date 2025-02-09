@@ -1,23 +1,18 @@
 return {
   {
-    "RRethy/vim-illuminate",
-    lazy = false,
-    config = function()
-      require "configs.illuminate"
-    end,
+    "folke/trouble.nvim",
+    opts = {},
+    cmd = "Trouble",
   },
 
   {
     "folke/todo-comments.nvim",
-    event = "BufReadPost",
-    cmd = { "TodoLocList", "TodoQuickFix", "TodoTelescope" },
+    event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     opts = {},
   },
 
   {
     "echasnovski/mini.nvim",
-    event = "BufReadPost",
-    version = "*",
     config = function()
       -- require("mini.animate").setup()
       require("mini.splitjoin").setup()
@@ -25,10 +20,7 @@ return {
     end,
   },
 
-  {
-    "mrjones2014/smart-splits.nvim",
-    event = "BufReadPost",
-  },
+  { "mrjones2014/smart-splits.nvim" },
 
   {
     "MeanderingProgrammer/render-markdown.nvim",
@@ -36,4 +28,5 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
     opts = require "configs.render-markdown",
   },
+
 }

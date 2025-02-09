@@ -18,15 +18,13 @@ opt.fillchars = {
   eob = " ",
 }
 opt.foldlevel = 99
-opt.foldenable = true
 opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
 
-opt.smoothscroll = true
 opt.foldexpr = "v:lua.require'util.ui'.foldexpr()"
 opt.foldmethod = "expr"
 opt.foldtext = ""
 
--- vim.opt.conceallevel = 1
+vim.opt.conceallevel = 2
 
 if vim.fn.has "win32" == 1 then
   vim.o.shell = vim.fn.executable "pwsh" and "pwsh" or "powershell"

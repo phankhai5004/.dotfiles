@@ -13,8 +13,9 @@ return {
 
   {
     "lukas-reineke/indent-blankline.nvim",
-    event = "User FilePost",
-    opts = require "configs.ibline",
+    enabled = false,
+    -- event = "User FilePost",
+    -- opts = require "configs.ibline",
   },
 
   -- OTHERS
@@ -27,4 +28,18 @@ return {
     "nvim-telescope/telescope.nvim",
     opts = require "configs.telescope",
   },
+
+  {
+    "folke/which-key.nvim",
+    keys = { "<leader>", "<c-w>", '"', "'", "`", "c", "v", "g", "z" },
+    cmd = "WhichKey",
+    opts_extend = { "spec" },
+    opts = function()
+      dofile(vim.g.base46_cache .. "whichkey")
+      return require "configs.which-key"
+    end,
+  },
+
+  { "nvzone/volt", enabled = false },
+  { "nvzone/menu", enabled = false },
 }

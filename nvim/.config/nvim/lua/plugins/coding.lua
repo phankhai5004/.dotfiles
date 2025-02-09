@@ -1,25 +1,19 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
+    -- event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
   {
     "windwp/nvim-ts-autotag",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     opts = require "configs.autotag",
   },
 
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
-  },
-
-  {
-    "folke/trouble.nvim",
-    opts = {},
-    cmd = "Trouble",
   },
 
   {
@@ -38,9 +32,7 @@ return {
   {
     "epwalsh/obsidian.nvim",
     ft = "markdown",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = require "configs.obsidian",
   },
 }

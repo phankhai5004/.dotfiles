@@ -4,19 +4,9 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+--TODO: ajdslkjflkdajsflk
+
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
-
-map("n", "<C-_>", function()
-  require("Comment.api").toggle.linewise.current()
-end, { desc = "Toggle comment" })
-
-map(
-  "v",
-  "<C-_>",
-  "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-  { desc = "Toggle comment" }
-)
 
 map("n", "vae", "ggVG", { desc = "Select all lines in document" })
 
@@ -38,17 +28,17 @@ map("n", "]d", "<ESC><cmd>lua vim.diagnostic.goto_next { float = { border = 'rou
 map("n", "[d", "<ESC><cmd>lua vim.diagnostic.goto_prev { float = { border = 'rounded' } }<CR>")
 
 -- Keyboard users
-map("n", "<C-t>", function()
-  require("menu").open "default"
-end, {})
-
--- mouse users + nvimtree users!
-map("n", "<RightMouse>", function()
-  vim.cmd.exec '"normal! \\<RightMouse>"'
-
-  local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
-  require("menu").open(options, { mouse = true })
-end, {})
+-- map("n", "<C-t>", function()
+--   require("menu").open "default"
+-- end, {})
+--
+-- -- mouse users + nvimtree users!
+-- map("n", "<RightMouse>", function()
+--   vim.cmd.exec '"normal! \\<RightMouse>"'
+--
+--   local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+--   require("menu").open(options, { mouse = true })
+-- end, {})
 
 map("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Navigate left Tmux pane" })
 map("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Navigate righ Tmux pane" })
@@ -85,6 +75,14 @@ map("n", "<leader><leader>h", require("smart-splits").swap_buf_left)
 map("n", "<leader><leader>j", require("smart-splits").swap_buf_down)
 map("n", "<leader><leader>k", require("smart-splits").swap_buf_up)
 map("n", "<leader><leader>l", require("smart-splits").swap_buf_right)
+
+map("n", "<A-n>", function()
+  Snacks.words.jump(vim.v.count1, true)
+end)
+
+map("n", "<A-p>", function()
+  Snacks.words.jump(-vim.v.count1, true)
+end)
 
 -- map("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "telescope find files" })
 

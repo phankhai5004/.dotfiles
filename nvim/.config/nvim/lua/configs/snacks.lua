@@ -4,9 +4,8 @@ local opts = {
   -- or leave it empty to use the default settings
   -- refer to the configuration section below
   bigfile = { enabled = true },
-  scroll = {},
-  animate = {},
-  toggle = {},
+  words = { enabled = true },
+  indent = require "configs.indent",
 }
 
 return opts
