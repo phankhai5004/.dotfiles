@@ -9,21 +9,22 @@ opt.autowrite = true
 opt.pumheight = 13
 opt.wrap = true
 
-opt.fillchars = {
-  foldopen = "",
-  foldclose = "",
+vim.o.foldcolumn = "auto"
+vim.o.foldlevel = 99 -- Using ufo provider need a large value
+vim.o.foldlevelstart = 99
+vim.o.foldnestmax = 0
+vim.o.foldenable = true
+vim.o.foldmethod = "indent"
+
+vim.opt.fillchars = {
   fold = " ",
+  foldopen = "",
   foldsep = " ",
-  diff = "╱",
+  foldclose = "",
+  stl = " ",
   eob = " ",
 }
-opt.foldlevel = 99
-opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
-opt.foldexpr = "v:lua.require'util.ui'.foldexpr()"
-opt.foldmethod = "expr"
-opt.foldtext = ""
-
-vim.opt.conceallevel = 2
+-- vim.opt.conceallevel = 2
 
 if vim.fn.has "win32" == 1 then
   vim.o.shell = vim.fn.executable "pwsh" and "pwsh" or "powershell"

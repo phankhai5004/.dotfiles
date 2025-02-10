@@ -22,11 +22,6 @@ map("n", "<leader>fT", "<cmd>TodoTelescope<CR>", { desc = "Todo | Telescope" })
 map("n", "]d", "<ESC><cmd>lua vim.diagnostic.goto_next { float = { border = 'rounded' } }<CR>")
 map("n", "[d", "<ESC><cmd>lua vim.diagnostic.goto_prev { float = { border = 'rounded' } }<CR>")
 
-map("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Navigate left Tmux pane" })
-map("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Navigate righ Tmux pane" })
-map("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "Navigate down Tmux pane" })
-map("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "Navigate up Tmux pane" })
-
 map("n", "<leader>tt", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
 
 map("n", "<leader>tT", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics (Trouble)" })

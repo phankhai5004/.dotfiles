@@ -28,4 +28,11 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
     opts = require "configs.render-markdown",
   },
+
+  {
+    "kevinhwang91/nvim-ufo",
+    event = "BufReadPost",
+    dependencies = { "kevinhwang91/promise-async", "luukvbaal/statuscol.nvim" },
+    opts = require "configs.ufo",
+  },
 }

@@ -9,9 +9,26 @@ M.base46 = {
   theme = "onedark",
 
   hl_add = {
-    SnacksIndent = { fg = "grey" },
     WhichKeyTitle = { fg = "blue", bg = "black", bold = true },
     St_relativepath = { fg = "light_grey", bg = "lightbg", bold = true },
+
+    RenderMarkdownH1 = { fg = "red", bold = true, italic = true },
+    RenderMarkdownH1Bg = { fg = "red", bold = true, italic = true },
+
+    RenderMarkdownH2 = { fg = "orange", bold = true, italic = true },
+    RenderMarkdownH2Bg = { fg = "orange", bold = true, italic = true },
+
+    RenderMarkdownH3 = { fg = "yellow", bold = true, italic = true },
+    RenderMarkdownH3Bg = { fg = "yellow", bold = true, italic = true },
+
+    RenderMarkdownH4 = { fg = "vibrant_green", bold = true, italic = true },
+    RenderMarkdownH4Bg = { fg = "vibrant_green", bold = true, italic = true },
+
+    RenderMarkdownH5 = { fg = "cyan", bold = true, italic = true },
+    RenderMarkdownH5Bg = { fg = "cyan", bold = true, italic = true },
+
+    RenderMarkdownH6 = { fg = "purple", bold = true, italic = true },
+    RenderMarkdownH6Bg = { fg = "purple", bold = true, italic = true },
   },
 
   hl_override = {

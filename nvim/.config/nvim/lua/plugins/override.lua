@@ -13,9 +13,9 @@ return {
 
   {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
-    -- event = "User FilePost",
-    -- opts = require "configs.ibline",
+    -- enabled = false,
+    event = "User FilePost",
+    opts = require "configs.ibline",
   },
 
   -- OTHERS
@@ -40,6 +40,5 @@ return {
     end,
   },
 
-  { "nvzone/volt", enabled = false },
   { "nvzone/menu", enabled = false },
 }

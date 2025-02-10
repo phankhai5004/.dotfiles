@@ -12,11 +12,6 @@ return {
   },
 
   {
-    "christoomey/vim-tmux-navigator",
-    lazy = false,
-  },
-
-  {
     "folke/snacks.nvim",
     priority = 1000,
     lazy = false,

@@ -1,5 +1,5 @@
 local opts = {
-  animate = { enabled = false },
+  indent = { char = "│", highlight = "IblChar" },
   scope = { enabled = false },
 }
 

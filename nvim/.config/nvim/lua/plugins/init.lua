@@ -4,4 +4,5 @@ return {
   { import = "plugins.git" },
   { import = "plugins.override" },
   { import = "plugins.communities" },
+  { import = "plugins.statuscol" },
 }

@@ -127,3 +127,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export ANTLR_JAR="~/Desktop/src/antlr-4.9.2-complete.jar"
 . "$HOME/.cargo/env"
+
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
