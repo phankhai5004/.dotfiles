@@ -24,6 +24,7 @@ vim.opt.fillchars = {
   stl = " ",
   eob = " ",
 }
+opt.statuscolumn = [[%!v:lua.require'snacks.statuscolumn'.get()]]
 -- vim.opt.conceallevel = 2
 
 if vim.fn.has "win32" == 1 then

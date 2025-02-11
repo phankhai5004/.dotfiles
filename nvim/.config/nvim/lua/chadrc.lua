@@ -11,6 +11,7 @@ M.base46 = {
   hl_add = {
     WhichKeyTitle = { fg = "blue", bg = "black", bold = true },
     St_relativepath = { fg = "light_grey", bg = "lightbg", bold = true },
+    SnacksIndent = { fg = "#545862" },
 
     RenderMarkdownH1 = { fg = "red", bold = true, italic = true },
     RenderMarkdownH1Bg = { fg = "red", bold = true, italic = true },
