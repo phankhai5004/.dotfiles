@@ -125,7 +125,6 @@ eval "$(zoxide init bash)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export ANTLR_JAR="~/Desktop/src/antlr-4.9.2-complete.jar"
-. "$HOME/.cargo/env"
+export ANTLR_JAR="/usr/local/bin/antlr-4.9.2-complete.jar"
 
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session;}
